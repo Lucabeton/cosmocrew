@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boekenpagina</title>
+    <link rel="stylesheet" href="Boeken.css">
+    
+</head>
+<body>
+
+         <body style="background: url('media/backround.avif') no-repeat center center fixed; background-size: cover;">
+<header>
+    <button onclick="navigate('index')">Homepage</button>
+    <button onclick="navigate('FilmsKijken/Films')">Films</button>
+    <button onclick="navigate('Activiteiten/Activiteiten')">Activiteiten</button>
+</header>
+
+<div id="search-bar">
+    <button onclick="toggleKeyboard()">Zoeken</button>
+</div>
+
+<div id="book-grid">
+    <div class="book" onclick="openBook('Boek 1')">
+        <img src="media/boek1-1.jpg" alt="Boek 1">
+    </div>
+    <div class="book" onclick="openBook('Boek 2')">
+        <img src="media/boek2.jpg" alt="Boek 2">
+    </div>
+    <div class="book" onclick="openBook('Boek 3')">
+        <img src="media/boek3.jpg" alt="Boek 3">
+    </div>
+    <div class="book" onclick="openBook('Boek 4')">
+        <img src="media/boek4.jpg" alt="Boek 4">
+    </div>
+    <div class="book" onclick="openBook('Boek 5')">
+        <img src="media/boek5.jpg" alt="Boek 5">
+    </div>
+</div>
+
+<div id="keyboard">
+    <button onclick="typeKey('A')">A</button>
+    <button onclick="typeKey('B')">B</button>
+    <button onclick="typeKey('C')">C</button>
+    <button onclick="typeKey('D')">D</button>
+    <button onclick="typeKey('E')">E</button>
+    <button onclick="typeKey('F')">F</button>
+    <button onclick="typeKey('G')">G</button>
+    <button onclick="typeKey('H')">H</button>
+    <button onclick="typeKey('I')">I</button>
+    <button onclick="typeKey('J')">J</button>
+    <button onclick="typeKey('K')">K</button>
+    <button onclick="typeKey('L')">L</button>
+    <button onclick="typeKey('M')">M</button>
+    <button onclick="typeKey('N')">N</button>
+    <button onclick="typeKey('O')">O</button>
+    <button onclick="typeKey('P')">P</button>
+    <button onclick="typeKey('Q')">Q</button>
+    <button onclick="typeKey('R')">R</button>
+    <button onclick="typeKey('S')">S</button>
+    <button onclick="typeKey('T')">T</button>
+    <button onclick="typeKey('U')">U</button>
+    <button onclick="typeKey('V')">V</button>
+    <button onclick="typeKey('W')">W</button>
+    <button onclick="typeKey('X')">X</button>
+    <button onclick="typeKey('Y')">Y</button>
+    <button onclick="typeKey('Z')">Z</button>
+    <button onclick="typeKey(' ')">Spatie</button>
+    <button onclick="closeKeyboard()">Sluiten</button>
+</div>
+
+<div id="book-reader">
+    <p id="book-content">Hier verschijnt de inhoud van het boek.</p>
+    <button onclick="closeBook()">Sluiten</button>
+</div>
+
+<script src="boeken.js"></script>
+</body>
+</html>
