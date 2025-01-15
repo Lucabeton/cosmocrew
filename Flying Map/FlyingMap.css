@@ -1,3 +1,33 @@
 body{
-    background-color: blue;
+    background: url(foto/)
+    
+   
+    .countdown-timer {
+        margin: 20px;
+    }
+    
+    .space-scene {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    
+    .planet {
+        width: 120px; /* Maak de foto's kleiner */
+        height: auto;
+    }
+    
+    .distance {
+        margin: 0 20px;
+    }
+    
+}
+#foto1{
+ height: 400px;   
+ width: 400px;
+}
+#foto2{
+height: 400px;    
+width: 400px;
 }
