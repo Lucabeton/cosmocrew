@@ -1,33 +1,61 @@
-body{
-    background: url(foto/)
+body {
     
-   
-    .countdown-timer {
-        margin: 20px;
-    }
-    
-    .space-scene {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        margin-top: 20px;
-    }
-    
-    .planet {
-        width: 120px; /* Maak de foto's kleiner */
-        height: auto;
-    }
-    
-    .distance {
-        margin: 0 20px;
-    }
     
 }
-#foto1{
- height: 400px;   
- width: 400px;
+.navbar {
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0.8;
+  }
+
+
+/* Knop styling */
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
 }
-#foto2{
-height: 400px;    
-width: 400px;
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Foto container styling */
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Zorg dat de foto's onder elkaar staan */
+    height: calc(100vh - 120px); /* Hoogte aanpassen */
+    gap: 20px; /* Ruimte tussen foto's */
+}
+
+/* Foto-afmetingen */
+#foto1, #foto2 {
+    height: 300px; /* Afbeeldingen iets kleiner */
+    width: 300px;
+    object-fit: cover;
+}
+
+.space-scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.planet {
+    width: 120px;
+    height: auto;
+}
+
+.distance {
+    margin: 0 20px;
 }
