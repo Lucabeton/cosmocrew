@@ -1,3 +1,17 @@
+/* Welkomstbericht Styling */
+.welcome-message {
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    top: 50%; /* Zet de tekst verticaal in het midden */
+    left: 50%; /* Zet de tekst horizontaal in het midden */
+    transform: translate(-50%, -50%); /* Gebruik translate om het precies te centreren */
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Schaduw voor de tekst voor betere zichtbaarheid */
+    z-index: 10; /* Zorg ervoor dat het welkomstbericht boven de rest van de content komt */
+}
+
 /* Button Styling */
 .button {
     background-color: #00000087;  /* Dark background */
@@ -37,9 +51,12 @@
 
 /* Body Background */
 body {
-    background-color: #000000;  /* Set background to pure black */
-    margin: 0;  /* Remove default margin */
-    font-family: Arial, sans-serif;  /* Change to a clean font */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url(../Boekenlezen/media/background2.avif) no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    overflow: hidden;
 }
 
 /* Navbar */
@@ -49,6 +66,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px 0;
     position: relative;
+    opacity: 0.9;
 }
 
 /* Content Styling */
