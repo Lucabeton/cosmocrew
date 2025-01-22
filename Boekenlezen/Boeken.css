@@ -1,14 +1,16 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url(../Boekenlezen/media/space-sjryfre8k8f6i3ge.jpg) no-repeat center center fixed;
+    background: url(../Boekenlezen/media/backgroundboeken.jpg) no-repeat center center fixed;
     background-size: cover;
 }
+
 header {
     display: flex;
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.789);
+    background-color: rgba(223, 198, 198, 0);
     padding: 50px 0;
+    z-index: -1;
 }
 header button {
     background-color: rgb(255, 255, 255);
@@ -21,12 +23,13 @@ header button {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 20px 0;
 }
 #search-display {
     margin-right: 10px;
     font-size: 24px;
-    color: white;
+    color: rgb(252, 251, 251);
 }
 #search-bar button {
     background-color: black;
@@ -36,10 +39,12 @@ header button {
     cursor: pointer;
 }
 #book-grid {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .book {
     background-color: lightgray;
@@ -102,4 +107,28 @@ header button {
     padding: 10px 20px;
     cursor: pointer;
 }
+ 
+.button {
+    background-color: #00000087;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+.button:hover {
+    background-color: #ffffff;
+    color: black;  /* Inverted text color on hover */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px 0;
+}

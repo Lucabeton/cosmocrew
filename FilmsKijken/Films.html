@@ -3,10 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Films</title>
+    <title>Filmspagina</title>
     <link rel="stylesheet" href="Films.css">
 </head>
+
 <body>
-    
+    <div class="navbar">
+        <a href="../index.html"><button class="button">Home page</button></a>
+        <a href="../Boekenlezen/Boeken.html"><button class="button">Boeken</button></a>
+        <a href="../Activiteiten/Activiteiten.html"><button class="button">Activiteiten</button></a>
+    </div>
+
+    <div id="search-bar">
+        <p id="search-display">Zoek een film...</p>
+        <button class="button2" onclick="toggleKeyboard()">Zoeken</button>
+    </div>
+
+    <div id="film-grid">
+        <div class="film" onclick="openFilm('Inside out 2')">
+            <img src="media/film1.webp" alt="Inside out 2">
+        </div>
+        <div class="film" onclick="openFilm('Harry Pottter 1')">
+            <img src="media/film2.jpg" alt="Harry Pottter 1">
+        </div>
+        <div class="film" onclick="openFilm('Harry Pottter 3')">
+            <img src="media/film3.jpg" alt="Harry Pottter 3">
+        </div>
+        <div class="film" onclick="openFilm('Captain Marvel')">
+            <img src="media/film4.jpeg" alt="Captain Marvel">
+        </div>
+        <div class="film" onclick="openFilm('interstellar')">
+            <img src="media/film5.jpg" alt="interstellar">
+        </div>
+    </div>
+
+    <div id="keyboard">
+        <div>
+            <button onclick="typeKey('A')">A</button>
+            <button onclick="typeKey('B')">B</button>
+            <button onclick="typeKey('C')">C</button>
+            <button onclick="typeKey('D')">D</button>
+            <button onclick="typeKey('E')">E</button>
+            <button onclick="typeKey('F')">F</button>
+            <button onclick="typeKey('G')">G</button>
+            <button onclick="typeKey('H')">H</button>
+            <button onclick="typeKey('I')">I</button>
+            <button onclick="typeKey('J')">J</button>
+        </div>
+        <div>
+            <button onclick="typeKey('K')">K</button>
+            <button onclick="typeKey('L')">L</button>
+            <button onclick="typeKey('M')">M</button>
+            <button onclick="typeKey('N')">N</button>
+            <button onclick="typeKey('O')">O</button>
+            <button onclick="typeKey('P')">P</button>
+            <button onclick="typeKey('Q')">Q</button>
+            <button onclick="typeKey('R')">R</button>
+            <button onclick="typeKey('S')">S</button>
+            <button onclick="typeKey('T')">T</button>
+        </div>
+        <div>
+            <button onclick="typeKey('U')">U</button>
+            <button onclick="typeKey('V')">V</button>
+            <button onclick="typeKey('W')">W</button>
+            <button onclick="typeKey('X')">X</button>
+            <button onclick="typeKey('Y')">Y</button>
+            <button onclick="typeKey('Z')">Z</button>
+        </div>
+        <div>
+            <button onclick="typeKey(' ')">Spatie</button>
+            <button onclick="deleteKey()">DEL</button>
+            <button onclick="clearSearch()">NOP</button>
+            <button onclick="closeKeyboard()">Sluiten</button>
+        </div>
+    </div>
+
+    <div id="film-viewer">
+        <p id="film-content">Hier verschijnt de inhoud van de film.</p>
+        <button onclick="closeFilm()">Sluiten</button>
+    </div>
+
+    <script src="Films.js"></script>
 </body>
 </html>
