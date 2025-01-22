@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etens Controle</title>
     <link rel="stylesheet" href="Eten.css">
+    <title>Gezond Eten Controle</title>
 </head>
 <body>
+    <div class="navbar">
+        <a href="../index.html"><button class="button">Homepage</button></a>
+        <a href="../Chatroom/Chatroom.html"><button class="button">Chatroom</button></a>
+        <a href="../Sportieve Activiteiten/SportieveActiviteiten.html"><button class="button">Sportieve Activiteiten</button></a>
+        <a href="../Gezondsheid Controle/Gezondsheid.html"><button class="button">Gezondheidscontrole</button></a>
+    </div>
     
+    <div class="container">
+       
+        <div class="form-container">
+            <h1>Gezond Eten Controle</h1>
+            <p>Beantwoord de volgende vragen:</p><br>
+            <form id="healthForm">
+                <label>Hoe vaak eet je groenten per dag?</label><br><br>
+                <select name="vegetables" required>
+                    <option value="0">Nooit</option>
+                    <option value="1">1 keer</option>
+                    <option value="2">2 keer</option>
+                    <option value="3">3 keer of meer</option>
+                </select><br><br>
+
+                <label>Hoe vaak eet je fastfood per week?</label><br><br>
+                <select name="fastfood" required>
+                    <option value="0">Nooit</option>
+                    <option value="1">1 keer</option>
+                    <option value="2">2-3 keer</option>
+                    <option value="3">4 keer of meer</option>
+                </select><br><br>
+
+                <label>Drink je voldoende water (minimaal 2 liter per dag)?</label><br><br>
+                <select name="water" required>
+                    <option value="yes">Ja</option>
+                    <option value="no">Nee</option>
+                </select><br><br>
+
+                <button type="button" onclick="checkHealth()">Controleer</button><br><br>
+            </form>
+
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+    <script src="Etens.js"></script>
 </body>
 </html>
