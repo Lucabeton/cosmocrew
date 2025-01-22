@@ -1,5 +1,5 @@
- // Countdown timer script
- function startCountdown(duration) {
+// Countdown timer script
+function startCountdown(duration) {
     let timer = duration, hours, minutes, seconds;
     setInterval(function () {
         hours = Math.floor(timer / 3600);
@@ -16,7 +16,7 @@
 }
 
 // Start countdown from 1 hour
-startCountdown(36000);
+startCountdown(3600);
 
 
 
