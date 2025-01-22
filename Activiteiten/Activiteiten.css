@@ -7,10 +7,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: url(../fotos/outer-space-3pae4flbryaputyl.jpg) no-repeat center center fixed;
+    background: url(../fotos/Asteroid_field.webp) no-repeat center center fixed;
     background-size: cover;
     color: black;
     overflow: hidden;
+    cursor: url(/fotos/asteroid.png), auto;
 }
 
 /* Navbar styling */
@@ -59,8 +60,7 @@ body {
 #ball {
     width: 100px;
     height: 100px;
-    background-color: #ff6347;
-    border-radius: 50%;
+    background-color: #00000000;
     position: absolute;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
