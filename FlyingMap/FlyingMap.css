@@ -1,5 +1,10 @@
 body {
-    
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url(../FlyingM) no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    overflow: hidden;   
     
 }
 .navbar {
