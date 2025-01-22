@@ -1,3 +1,44 @@
-body{
-    background-color: blue;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url(../fotos/Space-Background-Image-2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.navbar .button {
+    background: #ffffff7c;
+    border: 3px, solid, black;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.navbar .button:hover {
+    color: white;
+    background: #0000007c;
+    border: 3px, solid, rgb(255, 255, 255);
+}
+
+.form-container {
+    background: #ffffff7c;
+    border: 5px, solid, black;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
 }

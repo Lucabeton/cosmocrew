@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gezondsheid Controle</title>
-    <link rel="stylesheet" href="Gezondsheid.css">
+    <link rel="stylesheet" href="./Gezondsheid.css">
+    <title>Mission to Mars</title>
 </head>
 <body>
-    
+    <div class="navbar">
+        <a href="../Etens controle/Eten.html"><button class="button">Flying Map</button></a>
+        <a href="../Activiteiten/Activiteiten.html"><button class="button">Gezondheid Controle</button></a>
+    </div>
+    <div class="form-container">
+        <h1>Gezondheidscontrole Formulier</h1>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="leeftijd">Leeftijd:</label>
+                <input type="number" id="leeftijd" name="leeftijd" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="geslacht">Geslacht:</label>
+                <select id="geslacht" name="geslacht" required>
+                    <option value="">Selecteer</option>
+                    <option value="man">Man</option>
+                    <option value="vrouw">Vrouw</option>
+                    <option value="anders">Anders</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Heb je gezondheidsklachten?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="klachten" value="ja" required> Ja</label>
+                    <label><input type="radio" name="klachten" value="nee"> Nee</label>
+                </div>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="klachtenBeschrijving">Zo ja, beschrijf hier je klachten:</label>
+                <textarea id="klachtenBeschrijving" name="klachtenBeschrijving" rows="4"></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="datum">Datum van vandaag:</label>
+                <input type="date" id="datum" name="datum" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <button type="submit">Verzenden</button>
+            </div>
+        </form>
+    </div>    
 </body>
 </html>
