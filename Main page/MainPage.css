@@ -53,20 +53,19 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url(../Boekenlezen/media/background2.avif) no-repeat center center fixed;
+    background: url(../fotos/outer-space-3pae4flbryaputyl.jpg) no-repeat center center fixed;
     background-size: cover;
     color: black;
     overflow: hidden;
+
 }
 
 /* Navbar */
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px 0;
     position: relative;
-    opacity: 0.9;
 }
 
 /* Content Styling */
