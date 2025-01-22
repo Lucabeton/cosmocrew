@@ -1,4 +1,4 @@
-/* Algemene body-instellingen */
+
 body {
     background-image: image("../fotos/design-01jhn1mwxa-1736946936.jpg");
     margin: 0;
@@ -9,16 +9,14 @@ body {
     overflow: hidden;   
 }
 
-/* Navigatiebalk styling */
 .navbar {
-    position: absolute; /* Zorgt ervoor dat de knop op een vaste plek blijft */
-    top: 10px; /* Zet de knop iets van de bovenkant af */
-    left: 10px; /* Zet de knop iets van de linkerkant af */
-    padding: 0; /* Geen extra padding */
-    z-index: 10; /* Zorg dat de knop boven andere elementen staat */
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    padding: 0; 
+    z-index: 10; 
 }
 
-/* Knop styling */
 button {
     background-color: white;
     color: black;
@@ -34,14 +32,14 @@ button:hover {
     color: white;
 }
 
-/* Countdown Timer styling */
+
 .countdown-timer {
-    position: absolute; /* Zorgt ervoor dat de timer overal geplaatst kan worden */
-    top: 50%; /* Plaatst het verticaal in het midden */
-    left: 50%; /* Plaatst het horizontaal in het midden */
-    transform: translate(-50%, -50%); /* Centreert exact door het middelpunt van het element te verschuiven */
-    z-index: 10; /* Zorg dat de timer boven andere elementen staat */
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparante achtergrond */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 10; 
+    background: rgba(0, 0, 0, 0.7); 
     color: white;
     padding: 10px 20px;
     border-radius: 8px;

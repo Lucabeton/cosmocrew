@@ -79,11 +79,11 @@ header button {
     cursor: pointer;
 }
 #keyboard button:nth-last-child(3) {
-    background-color: lightgray; /* DEL knop */
+    background-color: lightgray; 
     color: rgb(0, 0, 0);
 }
 #keyboard button:nth-last-child(2) {
-    background-color: lightgray; /* NOP knop */
+    background-color: lightgray; 
     color: rgb(0, 0, 0);
 }
 #book-reader {
@@ -122,7 +122,7 @@ header button {
 
 .button:hover {
     background-color: #ffffff;
-    color: black;  /* Inverted text color on hover */
+    color: black; 
 }
 
 .navbar {
