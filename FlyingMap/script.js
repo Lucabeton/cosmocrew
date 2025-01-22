@@ -15,7 +15,6 @@ function startCountdown(duration) {
     }, 1000);
 }
 
-// Start countdown from 1 hour
 startCountdown(3600);
 
 
