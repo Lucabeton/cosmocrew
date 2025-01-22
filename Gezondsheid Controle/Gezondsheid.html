@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gezondsheid Controle</title>
-    <link rel="stylesheet" href="Gezondsheid.css">
+    <title>Gezondheidscontrole Formulier</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="form-container">
+        <h1>Gezondheidscontrole Formulier</h1>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam" required>
+            </div>
+
+            <div class="form-group">
+                <label for="leeftijd">Leeftijd:</label>
+                <input type="number" id="leeftijd" name="leeftijd" required>
+            </div>
+
+            <div class="form-group">
+                <label for="geslacht">Geslacht:</label>
+                <select id="geslacht" name="geslacht" required>
+                    <option value="">Selecteer</option>
+                    <option value="man">Man</option>
+                    <option value="vrouw">Vrouw</option>
+                    <option value="anders">Anders</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Heb je gezondheidsklachten?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="klachten" value="ja" required> Ja</label>
+                    <label><input type="radio" name="klachten" value="nee"> Nee</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="klachtenBeschrijving">Zo ja, beschrijf hier je klachten:</label>
+                <textarea id="klachtenBeschrijving" name="klachtenBeschrijving" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="datum">Datum van vandaag:</label>
+                <input type="date" id="datum" name="datum" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Verzenden</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
